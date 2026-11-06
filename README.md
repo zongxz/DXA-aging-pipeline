@@ -29,12 +29,12 @@ chronological age ────────────────────�
                                                                      ├─► DXA BMD
    lifestyle · covariates · disease & death records ─────────────────┤   survival
                                                                      │   proteomics
-   GWAS ──► LDSC ──► MiXeR / LAVA / N-GWAMA                           │
+   GWAS ──► LDSC ──► MiXeR / LAVA / N-GWAMA  / CPASSOC               │
         └─► PRS-CS / classic PRS ──► PRS ────────────────────────────┤
         └─► PolyFun fine-mapping ──► credible sets                   │
         └─► TWAS / SMR                                               │
                                                                      │
-   scRNA-seq + spatial transcriptomics ──► cell2location ──► cell types
+   scRNA-seq  ──► cell types ──► scpagwas
 ```
 
 ---
@@ -109,8 +109,7 @@ prior variance (SNPVAR) → regional SuSiE → PIP and credible sets → loci.
 ### 5. Single cell — `05_singlecell/`
 
 ```
-01 gene filtering → 02 reference signature (RegressionModel)
-→ 03 spatial mapping (Cell2location) → 04 extract → 05 QC → 06 abundance
+scRNA-seq  ──► cell types ──► scpagwas
 ```
 
 ---
