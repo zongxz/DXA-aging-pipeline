@@ -1,0 +1,71 @@
+# ---- 本地路径配置（含真实路径，不入库）----
+config/paths.sh
+config/paths.R
+
+# ---- 数据 / 结果 / 中间产物 ----
+data/
+results/
+result/
+GWAS/*/genotype_cm/
+GWAS/*/finemap/
+GWAS/*/ldscores/
+GWAS/*/munge/
+GWAS/*/h2/
+GWAS/*/sumstats/
+GWAS/*/ref/
+*.fastGWA
+*.sumstats.gz
+*.prscs.txt
+*.lava.txt.gz
+*_smr.txt*
+*.h5ad
+*.rds
+*.RData
+*.Rdata
+*.rda
+*.bed
+*.bim
+*.fam
+*.bcor
+*.hdf5
+*.tar.gz
+*.zip
+*.sif
+
+# ---- 模型权重 ----
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# ---- R ----
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.Rproj.user/
+renv/library/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- 备份 / 临时 ----
+*.bak
+*.tmp
+*.log
+*.out
+*.OLD
+nohup.out
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
